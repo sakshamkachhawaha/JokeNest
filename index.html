@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JokeNest</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
+
+    <nav class="navbar">
+        
+        <a href="index.html">
+            <img src="images/22f46ba6-84c4-4d34-aca6-28e784d1d9bc.png" alt="JokeNest Logo" class="logo-img">
+        </a>
+        <a href="index.html" class="logo">JokeNest</a>
+
+        <div class="right">
+        <ul class="nav-links">
+            <li><a href="index.html"><span class="material-icons-outlined">home</span>Home</a></li>
+            <li><a href="fav.html"><span class="material-icons-outlined">favorite_border</span>Favorites</a></li>
+        </ul>
+
+        <button class="theme-toggle">🌙</button>
+        </div>
+    </nav>
+
+
+    <div class="main-container">
+        <section class="welcome-section">
+            <h1>Pick your mood, get a joke</h1>
+            <p>Pick how you're feeling and get a joke that matches your vibe.</p>
+
+            <div class="mood-buttons">
+                <div class="mood-card">
+                    <span class="emoji">😄</span>
+                    <span class="label">Happy</span>
+                </div>
+                <div class="mood-card">
+                    <span class="emoji">🥱</span>
+                    <span class="label">Bored</span>
+                </div>
+                <div class="mood-card">
+                    <span class="emoji">😡</span>
+                    <span class="label">Stressed</span>
+                </div>
+                <div class="mood-card">
+                    <span class="emoji">😈</span>
+                    <span class="label">Edgy</span>
+                </div>
+                <div class="mood-card">
+                    <span class="emoji">🎲</span>
+                    <span class="label">Random</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="joke-section hidden">
+            <!-- Top Bar -->
+            <div class="joke-topbar">
+                <button class="back-btn">←</button>
+                <span class="current-mood">Happy</span>
+            </div>
+
+            <!-- Main Card -->
+            <div class="joke-card">
+
+                <div class="joke-header">
+                    <span class="joke-category">Programming</span>
+                    <button class="save-btn"><span class="material-icons-outlined">favorite_border</span></button>
+                </div>
+
+                <p class="joke-text">
+                Why do programmers prefer dark mode? Because light attracts bugs.
+                </p>
+
+            </div>
+
+            <!-- Controls -->
+            <div class="joke-actions">
+                <button class="action-btn">Next Joke</button>
+                <button class="action-btn">Copy</button>
+            </div>
+
+        </section>
+    </div>
+
+
 
     <script src="Js/script.js"></script>
 </body>
