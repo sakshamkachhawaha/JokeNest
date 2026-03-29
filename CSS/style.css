@@ -328,3 +328,27 @@ body {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 600px) {
+  .joke-topbar {
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+  }
+  .back-btn {
+    padding: 6px 10px;
+  }
+  .current-mood {
+    font-size: 0.8rem;
+  }
+  .joke-card {
+    padding: 10px;
+  }
+  .joke-text {
+    font-size: 1.1rem;
+  }
+
+}
