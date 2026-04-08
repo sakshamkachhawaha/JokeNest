@@ -13,7 +13,7 @@
     <nav class="navbar">
         
         <a href="index.html">
-            <img src="images/22f46ba6-84c4-4d34-aca6-28e784d1d9bc.png" alt="JokeNest Logo" class="logo-img">
+            <img src="images/Untitled Project.jpg" alt="JokeNest Logo" class="logo-img" id="logo">
         </a>
         <a href="index.html" class="logo">JokeNest</a>
 
@@ -27,11 +27,43 @@
         </div>
     </nav>
 
+    <section class="favorites-page">
+
+        <h2 class="fav-title">Saved Jokes</h2>
+
+        
+        <div class="search-box">
+            <input type="text" placeholder="Search your jokes..." class="search-input">
+        </div>
+
+        
+        <div class="filter-pills">
+            <button class="pill active" data-category="all">All</button>
+            <button class="pill" data-category="Programming">Programming</button>
+            <button class="pill" data-category="Misc">Misc</button>
+            <button class="pill" data-category="Dark">Dark</button>
+            <button class="pill" data-category="Pun">Pun</button>
+        </div>
+
+        
+        <div class="sort-row">
+            <button class="sort-btn" data-sort="short">Short → Long</button>
+            <button class="sort-btn" data-sort="long">Long → Short</button>
+        </div>
+
+       
+        <div class="favorites-container" id="favContainer"></div>
+
+        
+        <p class="empty-state" id="emptyState">
+            No saved jokes yet.
+        </p>
+
+    </section>
 
 
 
 
-
-    <script src="Js/script.js"></script>
+    <script src="Js/fav.js"></script>
 </body>
 </html>

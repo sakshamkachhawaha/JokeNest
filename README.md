@@ -1,71 +1,53 @@
 # JokeNest
 
-JokeNest is a simple web application that suggests jokes based on the user’s mood. The idea is to make finding humor quick and a bit more personalized instead of just showing completely random jokes.
+JokeNest is a simple web app that picks jokes based on how you're feeling. Instead of showing completely random jokes, it tries to match your mood so you get something that actually fits the vibe.
 
-Purpose
+## Features
 
-This project is developed as part of an institute assignment to practice and demonstrate key web development concepts such as:
+- **Mood-based jokes** - Pick your mood (Happy, Bored, Stressed, Edgy, or Random) and get a joke that matches
+- **Save your favorites** - Hit the heart button to save jokes you want to revisit later
+- **Manage your saved jokes** - Search through them, filter by category, or sort by length
+- **Copy jokes** - One click to copy any joke to your clipboard
+- **Dark and light mode** - Toggle between themes whenever you like
+- **No account needed** - Everything is saved locally in your browser
 
-API integration using fetch
+## How It Works
 
-DOM manipulation
+JokeNest uses JokeAPI to fetch jokes dynamically. Each mood is linked to a joke category:
+- Happy gets puns
+- Bored gets miscellaneous jokes
+- Stressed gets programming jokes
+- Edgy gets dark humor
+- Random gets anything
 
-Handling asynchronous JavaScript
+## Technologies
 
-Using array methods like filter, map, and sort
+- HTML, CSS, JavaScript
+- Fetch API for getting jokes
+- localStorage for saving favorites and theme preference
 
-Building a responsive and interactive UI
+## Running It Locally
 
-API Used
+Clone the repository:
+```
+git clone https://github.com/sakshamkachhawaha/JokeNest.git
+```
 
-This project uses JokeAPI (v2) to fetch jokes dynamically:
+Navigate to the project folder and open `index.html` in your browser.
 
-https://v2.jokeapi.dev/joke/Any
+## Project Structure
 
-The API provides jokes in different categories like Programming, Misc, Dark, and Pun, which are used to match user moods.
-
-Features
-
-Mood-based joke suggestions
-
-Dynamic joke fetching from API
-
-Save favorite jokes using localStorage
-
-Search through saved jokes
-
-Filter jokes by category
-
-Sort jokes based on criteria (e.g., length)
-
-Dark / Light mode toggle
-
-Technologies Used
-
-HTML
-
-CSS
-
-JavaScript (Vanilla JS)
-
-Fetch API
-
-How to Use
-
-Open the app in your browser
-
-Select your current mood
-
-A joke will be displayed based on your mood
-
-Click “Next Joke” to load another one
-
-Save jokes you like to your favorites
-
-Use search, filter, and sort options to manage saved jokes
-
-Setup and Run Locally
-git clone https://github.com/your-username/repo-name.git
-cd repo-name
-
-Open index.html in your browser to run the project.
+```
+JokeNest/
+├── index.html          # Main page with mood selection
+├── fav.html            # Favorites page
+├── CSS/
+│   ├── style.css       # Styles for main page
+│   └── fav.css         # Styles for favorites page
+├── Js/
+│   ├── script.js       # Main page logic
+│   └── fav.js          # Favorites page logic
+└── images/
+    ├── Untitled Project.jpg   # Light mode logo
+    └── dark.jpg               # Dark mode logo
+```
