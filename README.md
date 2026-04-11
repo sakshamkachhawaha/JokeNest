@@ -26,28 +26,11 @@ JokeNest uses JokeAPI to fetch jokes dynamically. Each mood is linked to a joke 
 - Fetch API for getting jokes
 - localStorage for saving favorites and theme preference
 
-## Running It Locally
-
-Clone the repository:
-```
-git clone https://github.com/sakshamkachhawaha/JokeNest.git
-```
-
-Navigate to the project folder and open `index.html` in your browser.
-
-## Project Structure
+## Deployed it on Vercel
 
 ```
-JokeNest/
-├── index.html          # Main page with mood selection
-├── fav.html            # Favorites page
-├── CSS/
-│   ├── style.css       # Styles for main page
-│   └── fav.css         # Styles for favorites page
-├── Js/
-│   ├── script.js       # Main page logic
-│   └── fav.js          # Favorites page logic
-└── images/
-    ├── Untitled Project.jpg   # Light mode logo
-    └── dark.jpg               # Dark mode logo
+https://joke-nest.vercel.app/
 ```
+
+Navigate to the project using this vercel link in your browser.
+
